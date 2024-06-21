@@ -1,0 +1,278 @@
+@media (min-width: 480px) {
+  html {
+     -webkit-text-size-adjust: none;
+  }
+
+  #head{
+    display: none;
+  }
+}
+
+@font-face {
+    font-family: RobotoFlex-Regular;
+    src: url(RobotoFlex-Regular.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: RobotoFlex-Regular;
+  box-sizing: border-box;
+}
+
+.back{
+  background-image: url(phon.jpg);
+  height: 100%;
+}
+
+.white{
+  background-color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* Хедер */
+header{
+  display: block;
+}
+
+.head{
+  display: flex;
+  justify-content: space-around;
+  background-color: #AD7F4E;
+  border-bottom: 2px solid black
+}
+.logo{
+  width: 100px;
+}
+.hed{
+  text-decoration: none;
+  color: black;
+  margin-right: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.head_new{
+  display: flex;
+}
+.head_but{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.enter{
+  background-color: #A4A4A4;
+  width: 67px;
+  height: 28px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.regis{
+  background-color: white;
+  width: 107px;
+  height: 28px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+/* Слайдер */
+.sv h1{
+  display: flex;
+}
+
+.wip{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper{
+  height: 350px;
+  margin: 100px auto 0;
+  position: relative;
+  width: 100%;
+}
+
+.slider{
+  background-color: #ddd;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  width: inherit;
+  border:2px solid black;
+}
+.slides{
+  height: inherit;
+  opacity: 0;
+  position: absolute;
+  width: inherit;
+  z-index: 0;
+  transform: scale(1.5);
+  /* transition: transform ease-in-out .5s, opacity ease-in-out .5s; */
+}
+
+.wrapper > input{
+  display: none;
+}
+
+.slide1{ background-image: url(img/a.jpeg);}
+.slide2{ background-image: url(img/b.jpg);}
+.slide3{ background-image: url(img/o.jpg);}
+.slide4{ background-image: url(img/d.jpg);}
+.slide5{ background-image: url(img/p.jpg);}
+
+.wrapper .controls{
+  left: 50%;
+  margin-left:  -98px;
+  position: absolute;
+}
+
+.wrapper label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  border-radius: 50%;
+  transition: background ease-in-out .5s;
+}
+
+.wrapper label:after{
+  border: 2px solid black;
+  content: " ";
+  display: block;
+  height: 12px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 12px;
+  border-radius: 50%;
+}
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5){
+  background-color: black;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5{
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
+}
+
+/* Информация */
+
+a:link{
+  text-decoration: none!important;
+}
+
+.text3{
+  display: flex;
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+}
+
+.counter-container {
+    display: flex;
+    gap: 30px;
+}
+
+.counter {
+    text-align: center;
+}
+
+.count {
+    font-size: 4em;
+    font-weight: bold;
+    color: #333;
+}
+
+.text {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Новости */
+
+.zag{
+  display: flex;
+}
+
+.news{
+ display: flex;
+ flex-direction: column;
+ margin-left: 13%;
+ margin-right:13%;
+ margin-top: 10%;
+}
+
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  text-decoration: none;
+}
+.card{
+  width: 30%;
+  background-color: #AD7F4E;
+  border-radius: 10px;
+  padding:20px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  text-decoration: none;
+
+}
+
+.card h3{
+  margin-top: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+h3{
+  text-decoration: none;
+}
+
+p{
+  text-decoration: none;
+}
+
+.card p{
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+footer{
+  background-color: grey;
+}
+.fut{
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  border-top: 2px solid black;
+}
+
+.fut p{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}

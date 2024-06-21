@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Glavnoe</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <img class="logo" src="logo.png" alt="">
+        <div class="head_new">
+          <a class="hed" href="../index.html">Главная</a>
+          <a class="hed" href="../News/index.html">Новости</a>
+        </div>
+        <div class="head_but">
+        <a href="../Enter/index.html"><button class="enter" type="button" name="button">Вход</button></a>
+        <a href="../Registration/index.html"><button class="regis" type="button" name="button">Регистрация</button></a>
+        </div>
+      </div>
+    </header>
+    <div class="back">
+      <div class="white">
+    <!-- Регистрация -->
+    <div class="rig">
+      <p id="pRegistration">Вход</p>
+     <div class="forma">
+
+
+    <form class="formaReg" name="myForm" onsubmit="return validateForm()" method="post">
+
+
+
+    <label class="label">
+
+        Логин
+     <!--<input class="login" type="login" name="login" pattern="[а-яёА-ЯЁа-zA-Z\s-,.]{,}" required placeholder=" ">-->
+     <input id="input" class="login" type="login" name="login" required placeholder=" ">
+     <p id="pLogin1">Введите логин</p>
+     <p id="pLogin2">Неверный формат логина</p>
+    </label>
+     <br>
+
+
+
+    <label class="label">
+
+       Пароль
+
+    <!--<input id="pass" pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" name="password" minlength="6"  required placeholder=" ">
+    -->
+    <input id="input" class="pass" required placeholder=" ">
+    <p id="pPassword1">Введите пароль</p>
+
+    </label>
+    <span id="spanPassword2">Неверный формат пароля. В пароле должно быть минимум 6 символов, должны быть заглавные и прописные буквы, числа</p></span>
+    <br>
+
+    <label class="label">
+
+        Подтвердите пароль
+
+    <!--<input id="passR" type="password" minlength="6" pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" name="password-repeate" minlength="6" required placeholder=" ">
+    -->
+    <input id="input" class="passR" type="password" required placeholder=" ">
+    <p id="pPasswordRepete1">Введите пароль</p>
+    <p id="pPasswordRepete2">Пароли не совпадают</p>
+    </label>
+    <br>
+
+    <input class="sub" type="submit" onclick="Submit()">
+    <br>
+
+    </form>
+     </div>
+   </div>
+ </div>
+ </div>
+       <footer>
+         <p class="fut">Пользовательское соглашение | Политика конфиденциальности 2024 | © | </p>
+       </footer>
+    <script src="iuda.js"></script>
+  </body>
+</html>

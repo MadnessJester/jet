@@ -1,0 +1,152 @@
+@font-face {
+    font-family: RobotoFlex-Regular;
+    src: url(RobotoFlex-Regular.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: RobotoFlex-Regular;
+  box-sizing: border-box;
+}
+
+/* Хедер */
+.head{
+  display: flex;
+  justify-content: space-around;
+  background-color: #AD7F4E;
+  border-bottom: 2px solid black;
+  line-height: 50px;
+}
+.logo{
+  width: 100px;
+}
+.hed{
+  text-decoration: none;
+  color: black;
+  margin-right: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.head_new{
+  display: flex;
+}
+.head_but{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.enter{
+  background-color: #A4A4A4;
+  width: 67px;
+  height: 28px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.regis{
+  background-color: white;
+  width: 107px;
+  height: 28px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+/* Новость */
+
+.area{
+  display: flex;
+}
+
+.new_left{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 7%;
+}
+
+.img{
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  width: 80%;
+}
+
+.text_area h2{
+  margin-bottom: 2%;
+}
+
+.text_area {
+  padding-right: 30%;
+}
+
+/* Виджет */
+
+a:link{
+  text-decoration: none!important;
+}
+
+.Vidjet{
+  height: 100%;
+}
+
+.new_right{
+  width: 20%;
+  margin-top: 7%;
+  padding-top: 2%;
+  padding-left:2%;
+  padding-right:2%;
+  margin-right: 5%;
+  margin-left: 2%;
+  background-color: grey;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.vid{
+  width: 150px;
+  border: 2px solid black;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.card{
+  margin-bottom: 20%;
+
+}
+
+.card img{
+
+
+}
+
+.card h4{
+  text-decoration: none;
+  color: black;
+}
+
+.card p{
+  text-decoration: none;
+  color: black;
+}
+
+/* Подвал */
+
+footer{
+  background-color: grey;
+}
+.fut{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  height: 70px;
+  border-top: 2px solid black;
+}
+
+.fut p{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}

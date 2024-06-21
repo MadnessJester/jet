@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Новости</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="all">
+    <div class="one">
+    <header>
+      <div class="head">
+        <img class="logo" src="logo.png" alt="">
+        <div class="head_new">
+          <a class="hed" href="../index.html">Главная</a>
+          <a class="hed" href="../News/index.html">Новости</a>
+        </div>
+        <div class="head_but">
+          <a href="../Enter/index.html"><button class="enter" type="button" name="button">Вход</button></a>
+          <a href="../Registration/index.html"><button class="regis" type="button" name="button">Регистрация</button></a>
+        </div>
+      </div>
+    </header>
+     <div>
+       <div class="fil">
+       <!-- Фильтрация -->
+       <h1>Категории</h1>
+       <!-- Control buttons -->
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Показать все</button>
+          <button class="btn" onclick="filterSelection('history')"> История</button>
+          <button class="btn" onclick="filterSelection('help')"> Руководства</button>
+          <button class="btn" onclick="filterSelection('interest')"> Интересное</button>
+          <button class="btn" onclick="filterSelection('kid')"> Для детей</button>
+        </div>
+
+        <!-- Фильтруемые элементы. Примечание что некоторые из них имеют несколько имен классов (это может быть использовано, если они принадлежат к нескольким категориям) -->
+        <div class="container">
+          <div class="filterDiv help">
+            <a href="../New/index.html">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Как написать эссе: пошаговое руководство для учеников
+            </div>
+            <p>Эта статья поможет ученикам разобраться в структуре эссе, определить тему, собрать информацию, написать введение, основную часть и заключение.</p>
+            </div>
+        </div>
+      </div>
+    </a>
+          <div class="filterDiv interest">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Что такое фотосинтез и как он работает?
+            </div>
+            <p>Статья о процессе фотосинтеза, его значении для растений и жизни на Земле.</p>
+          </div>
+        </div>
+      </div>
+          <div class="filterDiv history">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              История Древнего Рима: от основания до падения
+            </div>
+            <p>Обзор ключевых событий в истории Древнего Рима, от основания города до падения империи.</p>
+          </div>
+        </div>
+      </div>
+          <div class="filterDiv interest">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Что такое искусственный интеллект и как он меняет мир?
+            </div>
+            <p>Введение в концепцию искусственного интеллекта, его применение в разных сферах и потенциальные последствия для человечества.</p>
+          </div>
+        </div>
+      </div>
+          <div class="filterDiv help kid">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Как ухаживать за животными: советы для детей
+            </div>
+            <p>Статья с практическими советами для детей о том, как правильно ухаживать за домашними животными.</p>
+          </div>
+        </div>
+      </div>
+          <div class="filterDiv interest">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Путешествие через космос: рассказ о планетах Солнечной системы
+            </div>
+            <p>Захватывающее путешествие по планетам Солнечной системы, с описанием их особенностей и интересных фактов.</p>
+          </div>
+        </div>
+      </div>
+          <div class="filterDiv help">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Как сделать презентацию: советы для учеников
+            </div>
+            <p>Практические рекомендации для учеников по созданию интересной и эффективной презентации.</p>
+          </div>
+        </div></div>
+      </div>
+          <div class="filterDiv interest kid">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Что такое экология и как мы можем сохранить нашу планету
+            </div>
+            <p>Статья о важности экологии, проблемах загрязнения окружающей среды и путях их решения</p>
+          </div>
+        </div>
+      </div>
+          <div class="filterDiv help">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Как выучить иностранный язык быстро и эффективно
+            </div>
+            <p>Советы и рекомендации по изучению иностранных языков, включая методы запоминания слов, практики разговора и использования онлайн-ресурсов</p>
+          </div>
+        </div>
+      </div>
+          <div class="filterDiv history">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Великие изобретения человечества: от колеса до компьютера
+            </div>
+            <p>Обзор ключевых изобретений, которые изменили мир, и их влияние на жизнь человечества</p>
+          </div>
+        </div>
+      </div>
+          <div class="filterDiv help">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Как сделать успешный проект в школе: от идеи до презентации
+            </div>
+            <p>Руководство по планированию, реализации и презентации школьного проекта, с учетом всех необходимых этапов</p>
+          </div>
+        </div>
+      </div>
+          <div class="filterDiv help">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Как написать реферат: советы для учеников
+            </div>
+            <p>Статья о структуре реферата, методах поиска информации и правилах оформления</p>
+          </div>
+        </div>
+      </div>
+          <div class="filterDiv interest">
+            <div class="card">
+            <img class="img" src="a.jpeg" alt="">
+            <div class="text">
+            <div class="zag">
+              Что такое бизнес и как он работает
+            </div>
+            <p>Введение в базовые понятия бизнеса, его типы, структуру и основные принципы функционирования.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="two">
+     <footer>
+       <p class="fut">Пользовательское соглашение | Политика конфиденциальности 2024 | © | </p>
+     </footer>
+   </div>
+     </div>
+    <script src="iuda.js"></script>
+  </body>
+</html>
